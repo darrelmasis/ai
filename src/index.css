@@ -1,12 +1,31 @@
+:root {
+  --avatar-size: 96px;
+}
+
 #root {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
   }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  background-color: gray;
+  margin: 0 auto;
+  border-radius: 50%;
 }
