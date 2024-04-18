@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'normalize.css';
 import { useState, useEffect } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
-import data from './assets/extras.json'
+import data from '../public/extras.json'
 
 function App() {
   const [employees, setEmployees] = useState([]); // Inicializa el estado como un array vacío
@@ -10,8 +10,9 @@ function App() {
 
   useEffect(() => {
     // Ordenar de manera descendente el objeto
-    const sortedData = data.sort((a, b) => a.currentTime - b.currentTime);
-    setEmployees(sortedData);
+    const sortedData = data.sort((a, b) => a.currentTime - b.currentTime)
+    console.log(data);
+    setEmployees(sortedData)
   }, []);
 
   const avatar = (str) => {
@@ -46,13 +47,16 @@ function App() {
                 <Card className='text-center p-3'>
                   <Card.Img variant='top' className='avatar' src={avatar(employee.name)} />
                   <Card.Body>
-                    <Card.Title className='fw-light'>{employee.name.split(' ')[0]}</Card.Title>
-                    <Card.Text>
+                    <Card.Title className='fw-light fs-2'>{employee.name.split(' ')[0]}</Card.Title>
+                    <Card.Text className='mt-3'>
                       Disponible:
-                      <span className='d-block mt-3 fw-light fs-1'>{limit - employee.currentTime}</span>
+                      <span className={`d-block fw-light fs-1 ${parseFloat(employee.leftTime) > limit ? 'text-success' : 'text-muted'}`}>{parseFloat(employee.leftTime).toFixed(2)}</span>
                     </Card.Text>
                     <Card.Text>
-                      <span className='d-block mt-3 fw-light'>H/E:  {employee.currentTime}</span>
+                      <span className={parseFloat(employee.currentTime) < 0 ? 'text-danger': 'text-success'}>H/E:  {parseFloat(employee.currentTime).toFixed(2)}</span>
+                    </Card.Text>
+                    <Card.Text>
+                      <span className='text-muted'>Viático:  C${parseInt(employee.viatic)}</span>
                     </Card.Text>
                   </Card.Body>
                 </Card>
