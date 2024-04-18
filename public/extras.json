@@ -2,31 +2,31 @@
   {
     "name": "Yeser",
     "leftTime": "18.6166666666667",
-    "currentTime": "-0.616666666666667",
-    "viatic": "70"
+    "currentTime": "-0.616666666666668",
+    "viatics": "70"
   },
   {
     "name": "Kailuma",
-    "leftTime": "17.6166666666667",
-    "currentTime": "0.383333333333335",
-    "viatic": "210"
+    "leftTime": "18.2333333333333",
+    "currentTime": "-0.233333333333331",
+    "viatics": "210"
   },
   {
     "name": "Darel",
-    "leftTime": "16.35",
-    "currentTime": "1.65",
-    "viatic": "210"
+    "leftTime": "17.05",
+    "currentTime": "0.950000000000002",
+    "viatics": "210"
   },
   {
     "name": "Bryan",
     "leftTime": "13.3666666666667",
-    "currentTime": "4.63333333333334",
-    "viatic": "420"
+    "currentTime": "4.63333333333333",
+    "viatics": "420"
   },
   {
     "name": "Anthony",
-    "leftTime": "11.9666666666667",
-    "currentTime": "6.03333333333334",
-    "viatic": "420"
+    "leftTime": "11.9833333333333",
+    "currentTime": "6.01666666666667",
+    "viatics": "420"
   }
 ]
