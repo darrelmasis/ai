@@ -7,6 +7,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "deploy": "npm run build && gh-pages -d dist",
+    "save": "git commit -a -m \"Update extras.json\" && git push && npm run deploy",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
