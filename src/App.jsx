@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     // Ordenar de manera descendente el objeto
     const sortedData = data.sort((a, b) => a.currentTime - b.currentTime)
-    console.log(data);
+    //console.log(data);
     setEmployees(sortedData)
   }, []);
 
@@ -38,6 +38,8 @@ function App() {
     return url;
   }
 
+  let deviceId = navigator.userAgent;
+
   return (
     <>
       <Container>
@@ -57,6 +59,10 @@ function App() {
                     </Card.Text>
                     <Card.Text>
                       <span className='text-muted'>Viático:  C${parseInt(employee.viatic)}</span>
+                    </Card.Text>
+
+                    <Card.Text>
+                      <span className='text-muted'>{deviceId}</span>
                     </Card.Text>
                   </Card.Body>
                 </Card>
