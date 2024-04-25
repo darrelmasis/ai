@@ -60,10 +60,6 @@ function App() {
                     <Card.Text>
                       <span className='text-muted'>Viático:  C${parseInt(employee.viatic)}</span>
                     </Card.Text>
-
-                    <Card.Text>
-                      <span className='text-muted'>{deviceId}</span>
-                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
