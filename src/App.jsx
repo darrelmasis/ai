@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       <Container>
-          <Row xs={2} sm={2} md={3} lg={4} xl={5} className='d-flex g-4 g-lg-3 content'>
+          <Row xs={1} sm={2} md={3} lg={4} xl={5} className='d-flex g-4 g-lg-3 content'>
             {employees.map((employee, index) => (
               <Col key={index} className=''>
                 <Card className='text-center p-3'>
