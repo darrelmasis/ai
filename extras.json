@@ -1,1 +1,26 @@
-[{"name": "Darel","leftTime": "-2.73333333333334","currentTime": "20.7333333333333","viatic": "960"},{"name": "Anthony","leftTime": "8.16666666666666","currentTime": "9.83333333333334","viatic": "660"},{"name": "Bryan","leftTime": "5.68333333333333","currentTime": "12.3166666666667","viatic": "730"},{"name": "Kailuma","leftTime": "16.8166666666667","currentTime": "1.18333333333333","viatic": "280"}]
+[
+  {
+    "name": "Darel",
+    "leftTime": "-2.73",
+    "currentTime": "20.73",
+    "viatic": "960"
+  },
+  {
+    "name": "Anthony",
+    "leftTime": "8.17",
+    "currentTime": "9.83",
+    "viatic": "660"
+  },
+  {
+    "name": "Bryan",
+    "leftTime": "5.68",
+    "currentTime": "12.32",
+    "viatic": "730"
+  },
+  {
+    "name": "Kailuma",
+    "leftTime": "16.82",
+    "currentTime": "1.18",
+    "viatic": "280"
+  }
+]
