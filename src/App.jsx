@@ -52,10 +52,10 @@ function App() {
                     <Card.Title className='fw-light fs-2'>{employee.name.split(' ')[0]}</Card.Title>
                     <Card.Text className='mt-3'>
                       Disponible:
-                      <span className={`d-block fw-light fs-1 ${parseFloat(employee.leftTime) > limit ? 'text-success' : 'text-muted'}`}>{parseFloat(employee.leftTime).toFixed(2)}</span>
+                      <span className={`d-block fw-light fs-1 ${employee.leftTime > limit ? 'text-success' : 'text-muted'}`}>{employee.leftTime}</span>
                     </Card.Text>
                     <Card.Text>
-                      <span className={parseFloat(employee.currentTime) < 0 ? 'text-danger': 'text-success'}>H/E:  {parseFloat(employee.currentTime).toFixed(2)}</span>
+                      <span className={employee.currentTime < 0 ? 'text-danger': 'text-success'}>H/E:  {employee.currentTime}</span>
                     </Card.Text>
                     <Card.Text>
                       <span className='text-muted'>Viático:  C${parseInt(employee.viatic)}</span>
